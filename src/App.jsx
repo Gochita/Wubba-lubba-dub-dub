@@ -22,7 +22,7 @@ const App = () => {
       <Formulario setNombrePersonaje={setNombrePersonaje} />
       <br></br>
       <PintarDatos nombrePersonaje={nombrePersonaje} />
-      <footer>aber</footer>
+      <footer></footer>
     </div>
   );
 };

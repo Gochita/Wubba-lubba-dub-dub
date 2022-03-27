@@ -9,7 +9,9 @@ const Personaje = ({ personaje }) => {
       <div className="card">
           <img src={image} alt={`imagen-${name}`} className="card-img-top" />
           <h5>{name}</h5>
-          <p>{species}</p>
+          <p> {species}</p>
+          <p> {location.name}</p>
+          <p> {gender}</p>
         </div>
       </div>
 

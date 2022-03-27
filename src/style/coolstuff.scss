@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+$color-fondo: #b8d5cd;
+
 .page{
-    background-color: #b8d5cd;
+    background-color: $color-fondo;
+    // background-image: ;
     width: 100%;
- 
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
 
 }
 
 .opacity{
-
     opacity: .6;
 }
+
+
+

@@ -1,19 +1,24 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
+
+
 
 const Barrita = () => {
   return (
-    <div>
-      <h1>Api rick and morty</h1>
+    <Fragment>
+  
       <div>
+        <img src={require('../imagen/rickymorty.png')}/>
+        <br></br>
           <NavLink to={"/"}>
               home
           </NavLink>
+          <br></br>
           <NavLink to={"/favoritos"}>
               favoritos
           </NavLink>
       </div>
-    </div>
+    </Fragment>
   );
 };
 
