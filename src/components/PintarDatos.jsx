@@ -33,7 +33,7 @@ const PintarDatos = ({ nombrePersonaje }) => {
 
   return (
    
-      <div className="row mt-2 mb-5">
+      <div className="row mt-2 mb-5" >
         {personajes.map((item) => (
           <Personaje key={item.id} personaje={item} />
         ))}

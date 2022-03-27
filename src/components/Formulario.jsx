@@ -26,7 +26,7 @@ const Formulario = ({ setNombrePersonaje }) => {
       <input
         type="text"
         placeholder="Ingrese personaje"
-        className="form-control mb-2"
+        className="form-control mb-2 opacity"
         value={nombre}
         onChange={handleChange}
         name="nombre"
