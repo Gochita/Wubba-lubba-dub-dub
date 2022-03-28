@@ -3,13 +3,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Barrita from "./components/Barrita";
 import Formulario from "./components/Formulario";
 import PintarDatos from "./components/PintarDatos";
-import './style/coolstuff.scss' ;
+import "./style/coolstuff.scss";
 
 const App = () => {
   const [nombrePersonaje, setNombrePersonaje] = useState("");
 
   return (
-    <div className="container " >
+    <div className="container ">
       <header>
         <BrowserRouter>
           <Routes>
@@ -22,7 +22,9 @@ const App = () => {
       <Formulario setNombrePersonaje={setNombrePersonaje} />
       <br></br>
       <PintarDatos nombrePersonaje={nombrePersonaje} />
-      <footer></footer>
+      <footer>
+        <div page></div>
+      </footer>
     </div>
   );
 };

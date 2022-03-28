@@ -34,9 +34,9 @@ const Formulario = ({ setNombrePersonaje }) => {
       <button type="submit" className="btn btn-dark">
         buscar
       </button>
-      {/* <button type="submit" className="btn btn-success" >
-        inicio
-      </button> */}
+      <button type="submit" className="btn btn-success">
+      🏠
+      </button>
     </form>
   );
 };

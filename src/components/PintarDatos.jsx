@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import Personaje from "./Personaje";
+import axios from "axios";
 const PintarDatos = ({ nombrePersonaje }) => {
   const [personajes, setPersonajes] = useState([]);
 
@@ -8,12 +9,18 @@ const PintarDatos = ({ nombrePersonaje }) => {
     consumirApi(nombrePersonaje);
   }, [nombrePersonaje]);
 
+const creaPeticion = axios.create();
+
+
+
   const consumirApi = async (nombre) => {
     try {
-      const res = await fetch(
-        `https://rickandmortyapi.com/api/character/?name=${nombre}&status=alive`
-      );
-      if (!res.ok) {
+     
+       // para vivos `https://rickandmortyapi.com/api/character/?name=${nombre}&status=alive`
+       // para muertos `https://rickandmortyapi.com/api/character/?name=${nombre}&status=dead`
+    
+      const res = await creaPeticion.get(`https://rickandmortyapi.com/api/character/?name=${nombre}`)
+      if (!res.request) {
         return Swal.fire({
           title: "!Error",
           text: "💀 oops, no results found 💀",
@@ -22,13 +29,13 @@ const PintarDatos = ({ nombrePersonaje }) => {
         });
       }
 
-      const datos = await res.json();
-      console.log(datos.results);
-      setPersonajes(datos.results);
+      setPersonajes(res.data.results);
     } catch (error) {
       console.log(error);
     } finally {
+      
     }
+    
   };
 
   return (
