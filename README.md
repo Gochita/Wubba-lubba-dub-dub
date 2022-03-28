@@ -20,3 +20,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 # Estilos añadidos (por mejorar)
 
 ![image](https://user-images.githubusercontent.com/45043430/160303716-cb06d565-619b-4cc7-ae30-9e08667bd1b0.png)
+
+
+#Cambios (por mejorar)
+
+![image](https://user-images.githubusercontent.com/45043430/160308721-2631b2d5-5cbc-4059-a9a1-af58cc944402.png)
